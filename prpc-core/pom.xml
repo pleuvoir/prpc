@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>prpc-all</artifactId>
+    <groupId>io.github.prpc</groupId>
+    <version>1.0</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>prpc-core</artifactId>
+
+  <properties>
+    <version.sofa.bolt>1.5.0</version.sofa.bolt>
+    <version.sofa.hessian>3.3.2</version.sofa.hessian>
+  </properties>
+
+
+  <dependencies>
+    <!--SOFABolt -->
+    <dependency>
+      <groupId>com.alipay.sofa</groupId>
+      <artifactId>bolt</artifactId>
+      <version>${version.sofa.bolt}</version>
+    </dependency>
+    <!--支持泛化调用-->
+    <dependency>
+      <groupId>com.alipay.sofa</groupId>
+      <artifactId>hessian</artifactId>
+      <version>${version.sofa.hessian}</version>
+    </dependency>
+
+    <!-- logger-->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-access</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+
+</project>
