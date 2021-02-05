@@ -257,7 +257,7 @@
 	</licenses>
 
 	<scm>
-		<url>https://github.com/pleuvoir/plugins-support</url>
+		<url>https://github.com/pleuvoir/prpc</url>
 		<connection>scm:git:https://github.com/pleuvoir/prpc.git</connection>
 		<developerConnection>scm:git:https://github.com/pleuvoir/prpc.git</developerConnection>
 		<tag>v${project.version}</tag>
